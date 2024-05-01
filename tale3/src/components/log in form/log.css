@@ -1,0 +1,84 @@
+
+
+.A {
+    background-color: rgb(120, 153, 202);
+    display: flex;
+    justify-content: center;
+    height: 750px;
+}
+
+.form-container {
+    height: 420px;
+    width: 490px;
+    background-color: #ffffff; 
+    padding: 20px; 
+    padding-top: 50px; 
+    margin-top: 50px;
+
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form-container .form-control {
+    font-size: 6.875rem; 
+    padding: 0.375rem 0.75rem; 
+}
+
+.form-container .btn {
+    font-size: 0.975rem; 
+    padding: 0.375rem 0.75rem; 
+}
+
+.form-container h2 {
+    font-size: x-large;
+}
+
+.form-container .form-group input[type="email"],
+.form-container .form-group input[type="password"] {
+    height: 30px; 
+    width: 200px;
+    font-size: 0.875rem; 
+}
+
+.row.mb-3 {
+    margin-left: -15px; 
+}
+
+.btn.btn-primary.btn-block {
+    height: 30px;
+    width: 200px;
+    font-size: small;
+}
+
+.form-check {
+    padding-right: 80px; 
+}
+
+.text-decoration-none {
+    color: rgb(66, 66, 201); 
+}
+
+.text-decoration-none.forgot-password {
+    font-size: 0.625rem; 
+    margin-left: -90px; 
+}
+
+.logo {
+    width: 230px; 
+    height: auto; 
+    float: right; 
+    margin-left: 20px; 
+    padding-top: 80px;
+}
+
+.register-option {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.register-option p {
+    color: rgb(66, 66, 201); 
+    font-weight: bold;
+    margin-top: -10px; 
+    cursor: pointer; 
+}
