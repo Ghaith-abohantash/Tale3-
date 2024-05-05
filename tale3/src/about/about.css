@@ -1,0 +1,31 @@
+.info-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+
+.info-title {
+    flex: 1;
+    text-align: right;
+}
+
+.info-content {
+    flex: 2;
+    text-align: left;
+    background:  #ead6af;
+    width: 40px;
+    height: 600px;
+}
+
+#howweare{
+    font-family: "GE SS Two", Sans-serif;
+    font-size: 75px;
+    font-weight: 500;
+}
+.lead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
