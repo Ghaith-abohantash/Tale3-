@@ -11,6 +11,8 @@
 }
 
 .info-content {
+    margin-left: 70px;
+    margin-top: 120px;
     flex: 2;
     text-align: left;
     background:  #ead6af;
@@ -18,10 +20,20 @@
     height: 600px;
 }
 
-#howweare{
+#info{
+    margin-right: 100px;
     font-family: "GE SS Two", Sans-serif;
     font-size: 75px;
     font-weight: 500;
+    color: blue;
+}
+
+#aboutus{
+    margin-right: 150px;
+    font-family: "GE SS Two", Sans-serif;
+    font-size: 75px;
+    font-weight: 500;  
+    color: blue;  
 }
 .lead{
     display: flex;
