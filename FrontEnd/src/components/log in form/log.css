@@ -1,0 +1,82 @@
+.All {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-top: 60px;;
+
+
+}
+
+.form{
+    background-color: #e3ebf3; 
+    padding: 30px; 
+    border-radius: 10px; 
+    text-align: center;
+    width: 400px; /* تقليل عرض الفورم */
+    margin: 0 auto; /* توسيط أفقي */
+    margin-top: 60px; /* هذا الخط قد يحتاج تعديل حسب حاجتك */
+}
+
+
+.new-logo {
+    width: 80px; 
+    margin-bottom: 20px;
+}
+
+.new-form-group {
+    margin-bottom: 20px;
+}
+
+.new-form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.new-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-btn:hover {
+    background-color: #ead6af;
+}
+
+.new-forgot-password {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.new-forgot-password:hover {
+    text-decoration: underline;
+}
+
+.new-register-option p {
+    font-size: 14px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.new-register-option p:hover {
+    text-decoration: underline;
+}
+  input[type="email"] {
+    width: 380px; /* تقسيم العرض بالتساوي بين الحقلين مع التوقف عند التحجيم */
+    padding: 10px; /* توسيع التباعد بين الحقول والنصوص */
+    margin: 8px; /* تحسين التباعد بين الحقول */
+    display: inline-block;
+    border: 1px solid #eef0f1;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+

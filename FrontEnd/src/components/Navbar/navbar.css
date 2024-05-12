@@ -1,0 +1,59 @@
+/* تطبيق الـ CSS على العناصر الجديدة */
+.new-navbar {
+  background-color: #80b7ef;
+  color: #000000cd;
+}
+
+.new-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-logo {
+  width: 70px;
+  height: 80px;
+}
+
+.new-nav {
+  list-style: none;
+  display: flex;
+}
+
+.new-nav-item {
+  margin-right: 70px; 
+}
+
+.new-nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.new-nav-link:hover {
+  color: rgb(255, 68, 0);
+}
+
+.new-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #eee0e0;
+  list-style: none;
+  padding: 10px;
+}
+
+.new-dropdown-item {
+  text-decoration: none; 
+}
+
+.new-nav-item.dropdown:hover .new-dropdown-menu {
+  display: block;
+  color: rgb(179, 255, 0);
+}
+
+.new-nav-item.dropdown {
+  order: 3; 
+}
+
+.new-nav-item {
+  order: 4; 
+}
