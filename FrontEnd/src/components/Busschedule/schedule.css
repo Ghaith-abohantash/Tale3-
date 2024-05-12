@@ -1,0 +1,74 @@
+
+.page{
+background-color: rgb(200, 222, 239);
+background-image: url('Bus.jpg');
+justify-content: center;
+height: 729px;
+display :flex;
+
+
+
+}
+.bus-schedule-table {
+    
+    width: 650px;
+    height: 100%;
+    background-color: #f0f5f7;
+    opacity: 0.8;
+    margin-left: 20px;
+
+}
+
+
+
+  
+  
+  
+.bus-row {
+    display: flex;
+    flex-direction: column; 
+    border: 3px solid #000000;
+    width: 600px;
+    padding: 8px;
+    margin-left: 25px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .first-two-lines {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+  }
+  
+  .last-two-lines {
+    display: flex;
+    justify-content: space-between; }
+  
+  .bus-row button {
+    padding: 5px;
+    background-color: #36e33e;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+  
+  .bus-row button:hover {
+    background-color: #57a5e5;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+  }
+  .info-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-text > div {
+    margin-right: 10px; 
+  }
