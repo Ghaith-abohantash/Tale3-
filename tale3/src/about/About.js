@@ -9,7 +9,14 @@ function About() {
                         <div className="col-lg-12">
                             <div className="info-container"> 
                                 <div className="info-title"> 
-                                    <h2 id="howweare">معلومات عنا</h2>
+                                  <section>
+                                  <div>
+                                    <h2 id="info">معلومات </h2>
+                                  </div>
+                                  <div>
+                                    <h2 id="aboutus"> عنا</h2>
+                                  </div>
+                                </section>
                                 </div>
                                 <div className="info-content">
                                     <p className="lead"></p> 
