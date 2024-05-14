@@ -1,32 +1,26 @@
-import './about.css';  
+import './about.css';
 
-function About() {
-    return (
-        <div>
-            <section id="about" className="mt-5">
-                <div className="container px-4">
-                    <div className="row gx-4 justify-content-center">
-                        <div className="col-lg-12">
-                            <div className="info-container"> 
-                                <div className="info-title"> 
-                                  <section>
-                                  <div>
-                                    <h2 id="info">معلومات </h2>
-                                  </div>
-                                  <div>
-                                    <h2 id="aboutus"> عنا</h2>
-                                  </div>
-                                </section>
-                                </div>
-                                <div className="info-content">
-                                    <p className="lead"></p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    );
+const About = () => {
+  return (
+    <div className="about-us">
+      <img src="https://i.postimg.cc/jqW47BwT/430389380-1873351533086077-7161183875858680826-n.jpg" alt="Bus" className="bus-image" />
+      <div className="about-text">
+        <h2 id='whoweare'>من نحن</h2>
+        <p>
+          يشمل طلاب الجامعات وأعضاء هيئة "Tale3" الجمهور المستهدف الأساسي لنظام جزئ المقاعد.
+          التدريس والموظفين الذين يسافرون عبر أبواب الجامعة. قد تملأ جماهير الثانوية الزوار والضيوف.
+          يمكن للمستخدمين (الركاب والسائقين ومطاريد حركة الحافلات) الوصول إلى النظام من خلال منصة متميزة
+          وبه. يمكنكم عرض مضيفات تحت الإيقاعات في الفتت القيماء. ججز المقاعد بإجراء الدفع باستخدام طرق دفع مختلفة.
+        </p>
+        <p>
+          لتطوير الواجهة الأمامية ، يستخدم نظام الويب مثل "Tale3" تقنيات React و PayPal
+          لنتيح الحافلات في الوقت الحقيقي. يتميز واجهة متقدمة Google Maps API لتكامل المدفوعات و
+          عهية الاستخدام جزئ المقاعد بطلاقة وبضرر خيري لفلل العام عام.
+        </p>
+      </div>
+    </div>
+
+  );
 }
-    export default About;
+
+export default About;
