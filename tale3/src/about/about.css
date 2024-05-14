@@ -1,43 +1,34 @@
-.info-container  {
+.about-us {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    direction: rtl;
-}
-
-.info-title {
-    flex: 1;
+    justify-content: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px; 
+  }
+  
+  .bus-image {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .about-text {
+    max-width: 50%;
+  }
+  
+  .about-text #whoweare {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #paragraph1, #paragraph2  {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  #whoweare {
     text-align: right;
-}
-
-.info-content {
-    margin-left: 70px;
-    margin-top: 120px;
-    flex: 2;
-    text-align: left;
-    background:  #ead6af;
-    width: 40px;
-    height: 600px;
-}
-
-#info{
-    margin-right: 100px;
-    font-family: "GE SS Two", Sans-serif;
-    font-size: 75px;
-    font-weight: 500;
-    color: blue;
-}
-
-#aboutus{
-    margin-right: 150px;
-    font-family: "GE SS Two", Sans-serif;
-    font-size: 75px;
-    font-weight: 500;  
-    color: blue;  
-}
-.lead{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    direction: rtl;
-}
+  }
