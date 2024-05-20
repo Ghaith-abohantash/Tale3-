@@ -3,7 +3,7 @@ import './about.css';
 const About = () => {
   return (
     <div className="about-us">
-      <img src="https://i.postimg.cc/jqW47BwT/430389380-1873351533086077-7161183875858680826-n.jpg" alt="Bus" className="bus-image" />
+      <img src="https://www7.0zz0.com/2024/05/20/19/851326893.png" alt="Bus" className="bus-image" />
       <div className="about-text">
         <h2 id='whoweare'>من نحن</h2>
         <p id='paragraph1'>
