@@ -1,5 +1,5 @@
 
-.page{
+.S-table{
 background-color: rgb(200, 222, 239);
 background-image: url('Bus.jpg');
 justify-content: center;
@@ -9,7 +9,7 @@ display :flex;
 
 
 }
-.bus-schedule-table {
+.sschedule-table {
     
     width: 650px;
     height: 100%;
@@ -18,13 +18,7 @@ display :flex;
     margin-left: 20px;
 
 }
-
-
-
-  
-  
-  
-.bus-row {
+.sbus-row {
     display: flex;
     flex-direction: column; 
     border: 3px solid #000000;
@@ -35,17 +29,9 @@ display :flex;
     text-align: center;
   }
   
-  .first-two-lines {
-    display: flex;
-    justify-content: space-between; 
-    margin-bottom: 10px; 
-  }
+
   
-  .last-two-lines {
-    display: flex;
-    justify-content: space-between; }
-  
-  .bus-row button {
+  .sbus-row button {
     padding: 5px;
     background-color: #36e33e;
     color: white;
@@ -55,7 +41,7 @@ display :flex;
   
  
   
-  .bus-row button:hover {
+  .sbus-row button:hover {
     background-color: #57a5e5;
   }
   h1 {

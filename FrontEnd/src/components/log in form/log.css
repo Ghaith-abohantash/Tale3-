@@ -1,33 +1,33 @@
-.All {
-    padding: 20px;
+.Log {
+    padding: 80px;
     background-color: #ffffff;
     border-radius: 4px;
-    margin-top: 60px;;
+    margin-top: 50px;
+    
 
 
 }
 
-.form{
+.F{
     background-color: #e3ebf3; 
     padding: 30px; 
     border-radius: 10px; 
     text-align: center;
-    width: 400px; /* تقليل عرض الفورم */
-    margin: 0 auto; /* توسيط أفقي */
-    margin-top: 60px; /* هذا الخط قد يحتاج تعديل حسب حاجتك */
+    width: 400px; 
+    margin: 0 auto; 
 }
 
 
-.new-logo {
+.L-Logo {
     width: 80px; 
     margin-bottom: 20px;
 }
 
-.new-form-group {
+.group {
     margin-bottom: 20px;
 }
 
-.new-form-control {
+.control {
     width: 100%;
     padding: 8px;
     font-size: 16px;
@@ -35,7 +35,7 @@
     border: 1px solid #ced4da;
 }
 
-.new-btn {
+.Button  {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -46,37 +46,28 @@
     transition: background-color 0.3s ease;
 }
 
-.new-btn:hover {
+.Button:hover {
     background-color: #ead6af;
 }
 
-.new-forgot-password {
-    font-size: 14px;
-    color: #007bff;
-    text-decoration: none;
-}
 
-.new-forgot-password:hover {
-    text-decoration: underline;
-}
 
-.new-register-option p {
+.register{
     font-size: 14px;
     color: #6c757d;
     cursor: pointer;
 }
 
-.new-register-option p:hover {
+.register:hover {
     text-decoration: underline;
 }
   input[type="email"] {
-    width: 380px; /* تقسيم العرض بالتساوي بين الحقلين مع التوقف عند التحجيم */
-    padding: 10px; /* توسيع التباعد بين الحقول والنصوص */
-    margin: 8px; /* تحسين التباعد بين الحقول */
+    width: 300px; 
+    padding: 10px; 
+    margin: 8px; 
     display: inline-block;
-    border: 1px solid #eef0f1;
+    border: 1px ;
     border-radius: 5px;
     box-sizing: border-box;
   }
-  
 

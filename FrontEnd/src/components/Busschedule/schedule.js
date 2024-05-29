@@ -6,17 +6,17 @@ import './schedule.css';
 
 const BusScheduleTable = ({ buses }) => {
   return (
-    <div className="page">
-      <div className="bus-schedule-table">
+    <div className="S-table">
+      <div className="sschedule-table">
         <div className="Name">
           <h1>جدول الحافلات</h1>
         </div>
         {buses.map((bus, index) => (
-          <div key={index} className="bus-row">
-            <div className="bus-info">
+          <div key={index} className="sbus-row">
+            <div className="sbus-info">
               <div className="info-text">
                 <div>وجهة الباص: {bus.destination}</div>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                <FontAwesomeIcon icon={faMapMarkerAlt} />``
               </div>
             </div>
             <div className="bus-info">
