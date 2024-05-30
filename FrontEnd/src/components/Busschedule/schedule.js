@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faMoneyBillAlt, faChair, faClock } from '@fortawesome/free-solid-svg-icons';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 import './schedule.css';
 
@@ -38,7 +40,7 @@ const BusScheduleTable = ({ buses }) => {
                 <FontAwesomeIcon icon={faClock} />
               </div>
             </div>
-            <button>أحجز مقعدك الآن</button>
+            <Link  to="/booking" className="S-link"> أحجز الأن</Link>
           </div>
         ))}
       </div>

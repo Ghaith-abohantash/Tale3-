@@ -45,7 +45,7 @@ function AdminForm() {
 
     return (
         <div className = "all">
-            
+            <div className='Admin'>
             <form id="Form" onSubmit={addBus}>
                 <label htmlFor="busID"><b>Bus ID</b></label><br />
                 <input type="text" id="busID" required onChange={handleInputChange} /><br /><br />
@@ -67,6 +67,7 @@ function AdminForm() {
                 <input type="number" min="0" id="cost" required onChange={handleInputChange} /><br /><br />
                 <button type="submit">Add Bus</button>
             </form>
+            </div>
             <table id="busTable">
                 <thead>
                     <tr>

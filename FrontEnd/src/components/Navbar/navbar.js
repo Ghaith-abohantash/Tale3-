@@ -51,7 +51,7 @@ const Navbar = () => {
               
             </li>
             <li className="item">
-              <Link to="/About" className="link">قيم موقعنا</Link>
+              <Link to="/evaluation" className="link">قيم موقعنا</Link>
             </li>
             {token ? (
               <li className="item">
