@@ -5,9 +5,8 @@ const cors = require("cors");
 const authpath = require("./routes/auth.js"); 
 const bookingpath = require ('./routes/booking.js');
 const parser= require( 'body-parser');
-
 const userspath = require("./routes/user.js");
-const Evaluationpath =require("./routes/evaluation")
+const busespath = require("./routes/buses.js");
 const app = express();
 dotenv.config();
 app.use(cors());
@@ -18,10 +17,8 @@ app.use(parser.json());
 app.use(express.json()); 
 app.use("/api/auth", authpath); 
 app.use("/api/users", userspath); 
+app.use("/api/buses", busespath);
 app.use('/api/booking', bookingpath);
-app.use('/evaluation', Evaluationpath);
-
-
 const PORT = process.env.PORT || 4000; 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

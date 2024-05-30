@@ -1,33 +1,25 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import BusScheduleTable from '../components/Busschedule/schedule';
 
+const Schedulepage = () => {
+    const [buses, setBuses] = useState([]);
 
+    useEffect(() => {
+        axios.get('http://localhost:4000/api/buses') // Ensure this URL matches your backend
+            .then(response => {
+                setBuses(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching buses:', error);
+            });
+    }, []);
 
+    return (
+        <>
+            <BusScheduleTable buses={buses} />
+        </>
+    );
+};
 
-const Schedulepage = ()=>{
-    const buses = [
-        {
-          destination: 'الجامعة القديمة',
-          ticketPrice: 3,
-          passengerCount: 10,
-          departureTime: 4
-        },
-        {
-          destination: 'الاكاديمية',
-          ticketPrice: 4,
-          passengerCount: 5,
-          departureTime:  5 
-        },
-        {
-          destination: 'الاكاديمية',
-          ticketPrice: 4,
-          passengerCount: 8,
-          departureTime: 5
-        }
-      ];
-return(
-    <>
-<BusScheduleTable buses={buses} />
-</>
-)
-}
 export default Schedulepage;

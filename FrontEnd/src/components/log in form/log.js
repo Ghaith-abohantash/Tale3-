@@ -34,11 +34,13 @@ function LoginForm() {
             const response = await axios.post('http://localhost:4000/api/auth/login', data);
             const { token, isAdmin } = response.data;
             localStorage.setItem('token', token);
-            localStorage.setItem('isAdmin', isAdmin);
+            localStorage.setItem('isAdmin', true);
+            console.log('Response:', response.data);
             if (isAdmin) {
                 navigate('/admin');
             } else {
-                navigate('/schedule');
+                navigate('/admin');
+                // navigate('/schedule');
             }
         } catch (error) {
             setMessage('البريد الإلكتروني أو كلمة المرور غير صحيح');
@@ -47,7 +49,7 @@ function LoginForm() {
 
     return (
         <div className="Log">
-            <div className="L-F">
+            <div className="F">
                 <div className="L-Form">
                     <img src={logo} alt="Logo" className="L-Logo" />
                     <h2 className="text-center "><span className="tale3">Tale3</span> أهلاً بكم في</h2>
@@ -59,11 +61,11 @@ function LoginForm() {
                     )}
                     {!token && (
                         <form className="LForm" onSubmit={handleSubmit}>
-                            <div className="L-group">
+                            <div className="group">
                                 <label htmlFor="email">البريد الإلكتروني</label>
                                 <input type="email" id="email" name="email" required />
                             </div>
-                            <div className="L-group">
+                            <div className="group">
                                 <label htmlFor="password">كلمة السر</label>
                                 <input type="password" id="password" name="password"  required />
                             </div>

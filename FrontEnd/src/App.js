@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signuppage from './pages/signuppage';
 import Loginpage from './pages/loginpage';
 import Schedulepage from './pages/schedulepage';
-import Evaluation from './components/Evaluation/evaluation';
-
 import Adminpage from './pages/Adminpage';
 import Homep from './pages/home';
 import Updatepage from './pages/updatepage';
@@ -27,8 +25,6 @@ const App = () => {
         <Route path="/about" element={<Aboutuspage />} />
         <Route path="/update" element={<Updatepage />} />
         <Route path="/booking" element={<Bookingpage />} />
-        <Route path="/evaluation" element ={<Evaluation/>}/>
-
 
 
 
