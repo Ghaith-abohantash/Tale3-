@@ -1,0 +1,33 @@
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Bus.jpg');
+}
+
+.H-content {
+    text-align: center;
+    color:white;
+    margin-bottom: 200px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #76bfef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.button:hover {
+    background-color: #efb478;
+}
+
+.color{
+    color: white;
+}
