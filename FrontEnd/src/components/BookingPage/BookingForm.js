@@ -15,7 +15,7 @@ const BookingForm = () => {
   const [feedbackMessage, setFeedbackMessage] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:3001/api/auth/busDetails")
+    axios.get("http://localhost:4000/api/Bbook/busDetails")
       .then((response) => setBusDetails(response.data))
       .catch((error) => console.error("Error fetching bus details:", error));
   }, []);
@@ -36,7 +36,7 @@ const BookingForm = () => {
     e.preventDefault();
     const bookingData = {
       paymentMethod,
-      name: e.target.name.value,
+      name: e.target.name.value, 
       phoneNumber: e.target.phoneNumber.value,
       numberOfPeople,
       cardDetails: paymentMethod === "card" ? cardDetails : null,
@@ -44,7 +44,7 @@ const BookingForm = () => {
       price: busDetails.price
     };
 
-    axios.post("http://localhost:3001/api/auth/booking", bookingData)
+    axios.post("http://localhost:4000/api/BBook/booking", bookingData)
       .then((response) => {
         setFeedbackMessage("Booking successful!");
         console.log("Booking successful:", response.data);

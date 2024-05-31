@@ -18,7 +18,8 @@ const BookingSchema = new mongoose.Schema({
     required: true,
   },
   cardDetails: {
-    number: { 
+    number: 
+    { 
       type: String 
     },
     expiry: { 

@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors"); 
 const authpath = require("./routes/auth.js"); 
-const bookingpath = require ('./routes/booking.js');
+const bookingpath = require ('./routes/BBook.js');
 const parser= require( 'body-parser');
 
 const userspath = require("./routes/user.js");
@@ -18,7 +18,7 @@ app.use(parser.json());
 app.use(express.json()); 
 app.use("/api/auth", authpath); 
 app.use("/api/users", userspath); 
-app.use('/api/booking', bookingpath);
+app.use('/api/BBook', bookingpath);
 app.use('/evaluation', Evaluationpath);
 
 
