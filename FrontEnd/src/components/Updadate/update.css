@@ -1,0 +1,50 @@
+
+
+  input[type="text"], input[type="password"] {
+      width: calc(100% - 24px); 
+      padding: 10px; 
+      margin: 8px; 
+      display: inline-block;
+      border: 1px solid#eef0f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+  
+    }
+    
+    .update {
+      direction: rtl; 
+      padding: 20px; 
+      margin: auto; 
+      max-width: 400px; 
+      background-color: #f3f1f0; 
+      border-radius: 10px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      margin-top: 110px;
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333; 
+    }
+    
+    button {
+      width: 100%; 
+      padding: 10px; 
+      margin: 8px; 
+      background-color: #007bff; 
+      color: white; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
+    }
+    
+    button:hover {
+      background-color: #ead6af; 
+    }
+    
+    a {
+      text-decoration: none;
+      color: #007bff; 
+    }
+  

@@ -1,39 +1,40 @@
-/* تطبيق الـ CSS على العناصر الجديدة */
-.new-navbar {
+
+
+.Navbar {
   background-color: #80b7ef;
   color: #000000cd;
 }
 
-.new-container {
+.N-container {
   display: flex;
-  align-items: center;
+  align-items:end;
   justify-content: space-between;
 }
 
-.new-logo {
+.N-logo {
   width: 70px;
   height: 80px;
 }
 
-.new-nav {
+.Nav {
   list-style: none;
   display: flex;
 }
 
-.new-nav-item {
+.item {
   margin-right: 70px; 
 }
 
-.new-nav-link {
+.link {
   text-decoration: none;
   color: #000000;
 }
 
-.new-nav-link:hover {
+.link:hover {
   color: rgb(255, 68, 0);
 }
 
-.new-dropdown-menu {
+.dropdown-menu {
   display: none;
   position: absolute;
   background-color: #eee0e0;
@@ -41,19 +42,19 @@
   padding: 10px;
 }
 
-.new-dropdown-item {
+.dropdown-item {
   text-decoration: none; 
 }
 
-.new-nav-item.dropdown:hover .new-dropdown-menu {
+.item.dropdown:hover .dropdown-menu {
   display: block;
   color: rgb(179, 255, 0);
 }
 
-.new-nav-item.dropdown {
+.item.dropdown {
   order: 3; 
 }
 
-.new-nav-item {
+.item {
   order: 4; 
 }

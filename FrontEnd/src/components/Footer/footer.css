@@ -1,31 +1,32 @@
-.all {
+.Footer {
   background-color: #ffffff;
   position: relative;
-  margin-bottom: 0;
-  height: 200px;
+  height: 110px;
   width:100%;
 }
 
-.new-footer-container {
+.Fcontainer {
   background-color: #80b7ef;
   width: 98.6%;
   padding: 10px;
   color: #000;
   position: absolute;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90px;
 }
 
-.new-footer-container p {
+.Fcontainer p {
   font-size: 18px;
   margin: 2px;
 }
 
-.new-footer-container img {
+.Fcontainer img {
   margin-right: 15px;
   height: 30px;
   width: 30px;
+}
+.social-links img {
+  vertical-align: middle; 
 }

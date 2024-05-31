@@ -1,22 +1,24 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faMoneyBillAlt, faChair, faClock } from '@fortawesome/free-solid-svg-icons';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 import './schedule.css';
 
 const BusScheduleTable = ({ buses }) => {
   return (
-    <div className="page">
-      <div className="bus-schedule-table">
+    <div className="S-table">
+      <div className="sschedule-table">
         <div className="Name">
           <h1>جدول الحافلات</h1>
         </div>
         {buses.map((bus, index) => (
-          <div key={index} className="bus-row">
-            <div className="bus-info">
+          <div key={index} className="sbus-row">
+            <div className="sbus-info">
               <div className="info-text">
                 <div>وجهة الباص: {bus.destination}</div>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                <FontAwesomeIcon icon={faMapMarkerAlt} />``
               </div>
             </div>
             <div className="bus-info">
@@ -38,7 +40,7 @@ const BusScheduleTable = ({ buses }) => {
                 <FontAwesomeIcon icon={faClock} />
               </div>
             </div>
-            <button>أحجز مقعدك الآن</button>
+            <Link  to="/booking" className="S-link"> أحجز الأن</Link>
           </div>
         ))}
       </div>

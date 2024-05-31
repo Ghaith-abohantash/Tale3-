@@ -1,39 +1,81 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './log.css';
 import logo from './logo.png';
-import { Link } from 'react-router-dom'; 
-
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function LoginForm() {
-    return (
-        <div className="All">
-            <div className="form">
-                <img src={logo} alt="Logo" className="new-logo" />
+    const [message, setMessage] = useState('');
+    const navigate = useNavigate();
+    const token = localStorage.getItem('token');
 
-                <h2 className="text-center mb-4"> <span className="tale3">Tale3</span> أهلا  بكم في</h2>
-                <form className="small-form">
-                    <div className="new-form-group">
-                        <label htmlFor="email">البريد الإلكتروني</label>
-                        <input type="email" id="email" className="new-form-control" />
-                    </div>
-                    <div className="new-form-group">
-                        <label htmlFor="password">كلمة السر</label>
-                        <input type="password" id="password" className="new-form-control" />
-                    </div>
-                    <div className="row mb-3">
-                        <div className="col d-flex align-items-center">
-                            <input className="form-check-input" type="checkbox" id="remember" defaultChecked />
-                            <label className="form-check-label" htmlFor="remember"> تذكرني </label>
+    useEffect(() => {
+        if (token) {
+            setMessage('أنت مسجل دخولك بالفعل');
+        }
+    }, [token]);
+
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('isAdmin');
+        navigate('/login');
+    };
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        const data = {
+            email: formData.get('email'),
+            password: formData.get('password'),
+        };
+
+        try {
+            const response = await axios.post('http://localhost:4000/api/auth/login', data);
+            const { token, isAdmin } = response.data;
+            localStorage.setItem('token', token);
+            localStorage.setItem('isAdmin', isAdmin);
+            if (isAdmin) {
+                navigate('/admin');
+            } else {
+                navigate('/schedule');
+            }
+        } catch (error) {
+            setMessage('البريد الإلكتروني أو كلمة المرور غير صحيح');
+        }
+    };
+
+    return (
+        <div className="Log">
+            <div className="L-F">
+                <div className="L-Form">
+                    <img src={logo} alt="Logo" className="L-Logo" />
+                    <h2 className="text-center "><span className="tale3">Tale3</span> أهلاً بكم في</h2>
+                    {message && (
+                        <div className="message">
+                            {message}
+                            {token && <button onClick={handleLogout}>تسجيل الخروج</button>}
                         </div>
-                        <div className="col text-end">
-                            <a href="#!" className="new-forgot-password">هل نسيت كلمة السر؟</a>
-                        </div>
+                    )}
+                    {!token && (
+                        <form className="LForm" onSubmit={handleSubmit}>
+                            <div className="L-group">
+                                <label htmlFor="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                            <div className="L-group">
+                                <label htmlFor="password">كلمة السر</label>
+                                <input type="password" id="password" name="password"  required />
+                            </div>
+                            <button type="submit" className="Button">تسجيل الدخول</button>
+                        </form>
+                    )}
+                    <div className="register">
+                        <Link to="/signup">Tale3 ليس لديك حساب في</Link>
                     </div>
-                    <button type="button" className="new-btn btn-primary">سجل</button>
-                </form>
-                
-                <div className="new-register-option">
-                    <Link to="/signup"> Tale3 لا أملك حساب في </Link>
+                    <div className="change">
+                        <Link to="/update">تغيير كلمة السر</Link>
+                    </div>
                 </div>
             </div>
         </div>

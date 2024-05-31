@@ -1,3 +1,15 @@
+
+
+.All {
+  padding: 170px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top: 20px;
+  
+
+
+}
+
 input[type="text"], input[type="password"] {
     width: calc(100% - 24px); 
     padding: 10px; 
@@ -14,7 +26,7 @@ input[type="text"], input[type="password"] {
     padding: 20px; 
     margin: auto; 
     max-width: 400px; 
-    background-color: #f9f9f9; 
+    background-color: #e3ebf3;
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   }
