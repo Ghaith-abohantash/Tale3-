@@ -77,16 +77,5 @@ npm install
 6- Start the React app:
 npm start
 
-نسخ
-تحرير
-
-نسخ
-تحرير
-
-
-
-
-
-
 
 
